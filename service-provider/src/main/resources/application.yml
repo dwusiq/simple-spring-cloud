@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: service-provider
+
+server:
+  port: 8082
+  servlet:
+    context-path: /cloud-service-provider
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8081/cloud-eureka/eureka/

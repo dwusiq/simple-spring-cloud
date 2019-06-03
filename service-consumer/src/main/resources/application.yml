@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: cloud-service-consumer
+server:
+  port: 8083
+  servlet:
+    context-path: /cloud-service-consumer
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8081/cloud-eureka/eureka/
