@@ -3,8 +3,6 @@ spring:
     name: cloud-service-consumer
 server:
   port: 8083
-  servlet:
-    context-path: /cloud-service-consumer
 
 eureka:
   client:

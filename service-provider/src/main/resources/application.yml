@@ -1,11 +1,9 @@
 spring:
   application:
-    name: service-provider
+    name: cloud-service-provider
 
 server:
   port: 8082
-  servlet:
-    context-path: /cloud-service-provider
 
 eureka:
   client:

@@ -1,0 +1,21 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: cloud-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true   # 允许从注册中心发现服务
+          lowerCaseServiceId: true  # 允许访问服务时忽略大小写
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8081/cloud-eureka/eureka/
+
+# 配置Gateway日志等级，输出转发细节信息
+logging:
+  level:
+    org.springframework.cloud.gateway: info
